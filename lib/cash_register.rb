@@ -13,6 +13,11 @@ class CashRegister
     @total += price * quantity
     @items << item
     
+    quantity.times do 
+      @total += price
+      @item << item
+    end
+    
   end
   
   def apply_discount
