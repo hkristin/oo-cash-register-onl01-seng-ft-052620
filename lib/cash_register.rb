@@ -11,7 +11,7 @@ class CashRegister
   
   def add_item(item, price, quantity = 1)
     @total += price * quantity
-    @items << item if !@items.include?(item)
+    @items << item
     
   end
   
@@ -28,7 +28,7 @@ class CashRegister
   end
   
   def items
-    @items.uniq
-    binding.pry
+    @items.uniq!
+  
   end
 end
