@@ -16,6 +16,7 @@ class CashRegister
     @total -= @total * (@discount / 100.0)
     if @total % 1 == 0 
       @total = @total.to_i
+    end
    "After the discount, the total comes to $#{@total}."
   end
 end
