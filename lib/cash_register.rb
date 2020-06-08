@@ -30,7 +30,7 @@ class CashRegister
   end
   
   def items
-    @items.uniq 
+    @items 
     #binding.pry
   
   end
