@@ -10,12 +10,8 @@ class CashRegister
   end
   
   def add_item(item, price, quantity = 1)
-
-    
-    quantity.times do 
-      @total += price
-      @item << item
-    end
+    @total += price * quantity
+    @items << item
     
   end
   
@@ -32,7 +28,8 @@ class CashRegister
   end
   
   def items
-    @items
+    @items.uniq 
+    binding.pry
   
   end
 end
