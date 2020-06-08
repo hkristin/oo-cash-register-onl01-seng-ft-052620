@@ -19,5 +19,7 @@ class CashRegister
         @total = @total.to_i
       end
      "After the discount, the total comes to $#{@total}."
+   else
+     
   end
 end
